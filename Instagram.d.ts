@@ -8,7 +8,7 @@ declare module 'react-native-instagram-login' {
     appSecret?: string;
     redirectUrl: string;
     scopes?: string[];
-    onLoginSuccess?: (data?: { access_token: string; user_id: number }) => void
+    onLoginSuccess?: (data?: string) => void
     onLoginFailure?: (error: string) => void
     modalVisible?: boolean;
     responseType?: string;
