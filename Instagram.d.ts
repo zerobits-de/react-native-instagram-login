@@ -3,13 +3,14 @@ declare module 'react-native-instagram-login' {
   import { StyleProp, ViewStyle, ImageStyle } from 'react-native';
   
   interface InstagramLoginProps {
+      ref: React.RefObject<any>
       appId: string;
       appSecret?: string;
       redirectUrl: string;
       scopes?: string[];
-      onLoginSuccess: (token: string, results: any) => void;
+      onLoginSuccess?: (data?: { access_token: string; user_id: number }) => void
+      onLoginFailure?: (error: string) => void
       modalVisible?: boolean;
-      onLoginFailure?: (error: any) => void;
       responseType?: string;
       containerStyle?: StyleProp<ViewStyle>;
       wrapperStyle?: StyleProp<ViewStyle>;
