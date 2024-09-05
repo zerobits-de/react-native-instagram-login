@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/hungdev/react-native-instagram-login#readme",
   "dependencies": {
-    "qs": "6.9.4",
+    "qs": "6.9.7",
     "axios": ">=0.28.1"
   },
   "peerDependencies": {
