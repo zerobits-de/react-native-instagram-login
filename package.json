@@ -35,6 +35,6 @@
     "axios": ">=0.28.1"
   },
   "peerDependencies": {
-    "react-native-webview": ">=13.10.5"
+    "react-native-webview": ">=13.8.6"
   }
 }
